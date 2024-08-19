@@ -13,13 +13,13 @@ class Node {
     }
 };
 
-void postorder(Node* root) {
+void inorder(Node* root) {
     if(root == NULL) {
         return;
     }
-    postorder(root->left);
+    inorder(root->left);
     cout << root->val << " ";
-    postorder(root->right);
+    inorder(root->right);
 }
 
 int main() {
@@ -50,7 +50,7 @@ int main() {
     h->right = i;
 
     //print
-    postorder(root);
+    inorder(root);
 
     return 0;
 }
