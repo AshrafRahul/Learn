@@ -1,0 +1,1 @@
+if(f->right != NULL) q.push(f->right);
